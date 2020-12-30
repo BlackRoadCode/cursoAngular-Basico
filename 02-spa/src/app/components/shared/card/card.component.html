@@ -1,0 +1,14 @@
+<div class="card animated fadeIn fast" >
+  <!-- `La forma de abajo funciona correctamente, sin embargo existe una nueva forma más optimizada (línea 13) -->
+  <!--<img src="{{ heroe.img }}" class="card-img-top" alt="...">-->
+  <!-- Se envuelve el nombre del atributo en [corchetes] para indicar que Angular se hará cargo del manejo de ese atributo -->
+  <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+  <div class="card-body">
+    <h5 class="card-title">{{ heroe.nombre }}</h5>
+    <p class="card-text">{{ heroe.bio }}</p>
+    <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+
+    <button (click)="verHeroe(heroe.idx)" type="button" class="btn btn-outline-primary btn-block">Ver Héroe</button>
+    <a [routerLink]="['/heroe', indice]" class="btn btn-outline-primary btn-block">Ver Más...</a>
+  </div>
+</div>

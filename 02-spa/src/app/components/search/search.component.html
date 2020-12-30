@@ -1,0 +1,15 @@
+<h1>Resultado de la Búsqueda: {{ termino }}</h1>
+
+<hr />
+
+<div *ngIf="arrHeroes.length == 0" class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">
+      No hay resultados para el término: {{ termino }}
+    </div>
+  </div>
+</div>
+
+<div class="card-columns">
+  <app-card [heroe]="heroe" [indice]="heroe.idx" *ngFor="let heroe of arrHeroes"></app-card>
+</div>
