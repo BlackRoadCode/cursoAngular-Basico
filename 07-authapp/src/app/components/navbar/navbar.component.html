@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Auth0 App</a>
+
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/home']" >Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/precios']" >Precios</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/protegida']" >Protegida</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <button class="btn btn-primary" (click)="_authService.loginWithRedirect()">Log in</button>
+        <button class="btn btn-danger" (click)="_authService.logout()">Log out</button>
+      </span>
+    </div>
+  </nav>
+  
+  

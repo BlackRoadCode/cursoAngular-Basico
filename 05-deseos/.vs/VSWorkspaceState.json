@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\agregar",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\pages\\agregar\\agregar.page.ts",
+  "PreviewInSolutionExplorer": true
+}

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\home",
+    "\\src\\app\\components\\search",
+    "\\src\\app\\components\\shared",
+    "\\src\\app\\components\\shared\\tarjetas",
+    "\\src\\app\\pipes",
+    "\\src\\app\\services",
+    "\\src\\assets",
+    "\\src\\assets\\img"
+  ],
+  "PreviewInSolutionExplorer": true
+}

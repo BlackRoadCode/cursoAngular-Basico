@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col">
+
+        <h1>Resultados para la búsqueda: <small>{{ this.terminoBusqueda }}</small></h1>
+
+        <hr>
+
+        <div *ngIf="movies.length > 0">
+            <app-peliculas-poster-grid [movies]="movies"></app-peliculas-poster-grid>
+        </div>
+
+    </div>
+</div>
